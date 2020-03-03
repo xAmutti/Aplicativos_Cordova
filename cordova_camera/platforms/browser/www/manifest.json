@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Proj2 Camera",
+  "short_name": "Proj2 Camera",
+  "version": "br.edu.eteczl.camera",
+  "description": "Simple Camera Project for Cordova Class Rooms",
+  "author": "wagnerdocri@gmail.com",
+  "icons": [],
+  "start_url": "index.html"
+}
