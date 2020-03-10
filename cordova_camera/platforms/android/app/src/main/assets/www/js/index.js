@@ -1,39 +1,12 @@
 
-/*
- * var app � uma vari�vel que vai representar pra nos o contexto do nosso aplicativo
- * ou seja o contexto do app
- * Entao nosso app ter� algumas funcoes, e entao, essas funcoes estarao definidas
- * dentro desse objeto app 
-*/
+
 var app = {
 
-    // Application Constructor
-    // Se vc for ate o final desse arquivo vc vai ver que ao ser carregado sera executado
-    // a chamada desse metodo
-    // app.initialize();
-    // Entao, pro nosso app funcionar, ele tem que ser inicializado
-    // A inicializacao do app consiste em adicionar o evento 'deviceready'
-    // O professor vai explicar isso em aula
-    // dentro do nosso codigo, desse metodo inicializew
-    // tem esse trecho
-    // this.onDeviceReady.bind(this)
-    // o this he o app
-    // on deviceReady he o metodo desse nosso app
-    // .bind recebe this pra forcar que o metodo onDeviceReady deve rodar dentro do contexto do nosso app
-    // Essa he uma questao da linguagem javascript.
-    // com esse bind, um this dentro do metodo onDeviceReady representara tambem nosso app
-    // pense que esse bind faz o nosso metodo onDeviceReady pertencer sempre ao nosso app
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
     
-    // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
-    // Esse metodo vai rodar quando o device estiver pronto
-    // se o professor esquecer, lembre ele de explicar o que e esse evento
-    // deviceReady
+    
     onDeviceReady: function() {
         var btnTirarFoto = document.getElementById("btnTirarFoto");
         btnTirarFoto.addEventListener('click',this.tirarFoto);
